@@ -60,10 +60,8 @@ function removeFromCart(itemName){
 cart.push(Object({ itemName: item, itemPrice: price }));
 var price = Math.floor((Math.random() * 100) + 1);
 var itemPrice = price;
-
-
   for (var i = 0; i < cart.length; i++) {
-    if (addToCart()[0].itemName === cart.length[i]) {
+    if (itemName === cart.length[i]) {
       cart.splice(i, 1);
       return cart;
     } else {  
