@@ -64,7 +64,7 @@ var itemPrice = price;
 var itemName = item;
 
   for (var i = 0; i < cart.length; i++) {
-    if (itemName === cart.length[i]) {
+    if (getCart()[0].itemName === cart.length[i]) {
       cart.splice(i+1, 1);
       return cart;
     } else {  
