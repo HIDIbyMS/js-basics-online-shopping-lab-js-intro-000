@@ -58,11 +58,11 @@ function total() {
   function removeFromCart(item){
     var itemName = "";
   for (var i = 0; i < cart.length; i++) {
-    if (cart[i].itemName === cart.length[i]) {
+    if (itemName === cart.length[i]) {
       cart.splice(i+1, 1);
       return cart;
     } else {  
-      (cart[i].itemName !== cart.length[i]);
+      (itemName !== cart.length[i]);
       return "That item is not in your cart.";
     }
   } 
