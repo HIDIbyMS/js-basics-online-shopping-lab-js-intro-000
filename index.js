@@ -63,7 +63,7 @@ var price = Math.floor((Math.random() * 100) + 1);
 var itemPrice = price;
 var itemName = item;
 
-  for (var i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length - 1; i++) {
     if (addToCart()[0].itemName === cart.length[i]) {
       cart.splice(i, 1);
       return cart;
