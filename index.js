@@ -57,9 +57,7 @@ function total() {
 //               ${getCart()[0].itemName}
 
 function removeFromCart(item){
-// cart.push(Object({ itemName: item, itemPrice: price }));
-// var price = Math.floor((Math.random() * 100) + 1);
-// var itemPrice = price;
+
   for (var i = 0; i < cart.length; i++) {
     if (item === cart.length[i]) {
       cart.splice(i + 1, 1);
