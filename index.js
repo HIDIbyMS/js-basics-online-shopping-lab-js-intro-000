@@ -56,7 +56,7 @@ function total() {
 
 //               ${getCart()[0].itemName}
 
-function removeFromCart(itemName){
+function removeFromCart("yams"){
 cart.push(Object({ itemName: item, itemPrice: price }));
 var price = Math.floor((Math.random() * 100) + 1);
 var itemPrice = price;
