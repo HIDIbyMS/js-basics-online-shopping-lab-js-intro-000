@@ -1,5 +1,5 @@
 var cart = [];
-Object({ itemName: item, itemPrice: price });
+cart.push(Object({ itemName: item, itemPrice: price }));
 var item = "";
 var price = Math.floor((Math.random() * 100) + 1);
 var itemPrice = price;
@@ -54,23 +54,19 @@ function total() {
 
 
 
-//       (getCart().length).toEqual(1);       getCart()[0].itemName
-  
+//               ${getCart()[0].itemName}
+  function removeFromCart(item){
 
-function removeFromCart(item) {
-  for (var i = 0; i < item.length; i++) {
-    if (item === cart[i]) {
-      cart.splice(i, 1);
+  for (var i = 0; i < cart.length; i++) {
+    if (cart.itemName === cart.length[i]) {
+      cart.splice(i+1, 1);
       return cart;
-    } else {
-      (item != cart[i]);
+    } else {  
+      (cart.itemName !== cart.length[i]);
       return "That item is not in your cart.";
     }
   } 
 } 
-
-
-
 
 function placeOrder(cardNumber) {
   var cardTotal = 0;
