@@ -61,7 +61,7 @@ function total() {
       cart.splice(i+1, 1);
       return cart;
     } else {  
-      (cart.itemName !== cart.length[i]);
+      (addToCart("") !== cart.length[i]);
       return "That item is not in your cart.";
     }
   } 
