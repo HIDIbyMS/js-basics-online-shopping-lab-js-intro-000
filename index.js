@@ -55,6 +55,7 @@ function total() {
 
 
 //               ${getCart()[0].itemName}
+
 function removeFromCart(item){
 var cart = [];
 cart.push(Object({ itemName: item, itemPrice: price }));
