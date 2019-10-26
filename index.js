@@ -68,7 +68,7 @@ var itemName = item;
       cart.splice(i+1, 1);
       return cart;
     } else {  
-      (itemName !== cart.length[i]);
+      (addToCart()[0]. !== cart.length[i]);
       return "That item is not in your cart.";
     }
   } 
