@@ -56,12 +56,12 @@ function total() {
 
 //               ${getCart()[0].itemName}
 
-function removeFromCart(item){
+function removeFromCart(itemName){
 var cart = [];
 cart.push(Object({ itemName: item, itemPrice: price }));
 var price = Math.floor((Math.random() * 100) + 1);
 var itemPrice = price;
-var itemName = item;
+
 
   for (var i = 0; i < cart.length; i++) {
     if (addToCart()[0].itemName === cart.length[i]) {
